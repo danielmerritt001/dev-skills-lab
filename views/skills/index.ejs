@@ -8,13 +8,26 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-  <h1>Tools of the Trade</h1>
+  <h1>Listen here you brazen upstart with more ambition that adult teeth.</h1>
+  <h3>From the beginning of time until about <%= time %> on <%= date %>, these are the agreed upon skills needed for coding.</h3>
   <div id="main">
     <ul>
       <% skills.forEach(skill => { %>
         <li>
         <a href="/skills/<%= skill._id %>">
-          <%= skill.skill %> - <%= skill.difficulty %>
+          <%= skill.skill %> 
+          <ul>
+            <li>
+              <%= skill.difficulty %>
+            </li> 
+          </ul>
+            <form 
+              action="/skills/<%= skill._id %>?_method=DELETE"
+              class="delete-form"
+              method="POST"
+              >
+              <button type="submit">Nah, you don't need this.</button>
+            </form>
         </a>
         </li>
       <% }) %>
