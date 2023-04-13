@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <script defer src="/script.js"></script>
 </head>
 <body>
   <h1>We heard you got one dem skillz fer us?</h1>
   <div id="main">
-    <form action="/skills" method="POST" autocomplete="off">
+    <form action="/skills" method="POST" autocomplete="off" id="new-form">
       <input type="text" name="skill" placeholder="Whatchu Got?">
       <input type="text" name="difficulty" placeholder="How hard it be?">
       <button type="submit" id="new-skill">Skilling in the Name</button>
