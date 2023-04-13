@@ -1,8 +1,19 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gray;
 }
-
+h1 {
+  color: blue;
+  background-color: lightgray;
+}
 a {
   color: #00B7FF;
+}
+#main{
+  background-color: rgb(223, 221, 221);
+  padding: 3px 5px 10px 5px;
+}
+#new-skill {
+  border-radius: 12px;
 }

@@ -5,15 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skills</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
   <h1>Tools of the Trade</h1>
-  <ul>
-    <% skills.forEach(skill => { %>
-      <li>
-      <%= skill.skill %> - <%= skill.difficulty %>
-      </li>
-    <% }) %>
-  </ul>
+  <div id="main">
+    <ul>
+      <% skills.forEach(skill => { %>
+        <li>
+        <a href="/skills/<%= skill._id %>">
+          <%= skill.skill %> - <%= skill.difficulty %>
+        </a>
+        </li>
+      <% }) %>
+    </ul>
+    <a href="/skills/new">We missing any toasty skillz?</a>
+  </div>
 </body>
 </html>

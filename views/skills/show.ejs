@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <title><%= title %></title>
 </head>
 <body>
-  <h1><%= title %></h1>
+  <h1>Skill</h1>
   <div id="main">
-    <a href="/skills">Don't Even Try Coding Until You Learn These Skills</a>
+    <h2>Skill #<%= skill._id %></h2>
+    <h3><%= skill.skill %></h3>
+    <p>How hard was it for you? <%= skill.difficulty %></p>
+    <a href="/skills">Go back</a>
   </div>
 </body>
 </html>
