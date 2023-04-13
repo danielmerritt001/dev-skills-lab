@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <h1>Look, I'm really sorry I messed up. What should this say?</h1>
+  <div id="main">
+    <form action="/skills/<%= skill._id %>?_method=PUT" method="POST" autocomplete="off" id="edit-form">
+      <input type="text" name="skill" value="<%= skill.skill %>">
+      <input type="text" name="difficulty" value="<%= skill.difficulty %>">
+      <button type="submit" id="edit-skill">Just keep this between us, please.</button>
+    </form>
+  </div>
+</body>
+</html>

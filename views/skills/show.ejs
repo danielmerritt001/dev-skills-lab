@@ -13,6 +13,9 @@
     <h2>Skill #<%= skill._id %></h2>
     <h3><%= skill.skill %></h3>
     <p>How hard was it for you? <%= skill.difficulty %></p>
+    <a href="/skills/<%= skill._id %>/edit">
+    <button id="edit-button">You got it all wrong!</button></a>
+    <br>
     <a href="/skills">Go back</a>
   </div>
 </body>
